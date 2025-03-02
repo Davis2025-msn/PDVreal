@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto de Vida</title>
+    <link rel="stylesheet" href="segundaparte.css">
+</head>
+<body>
+
+    <!-- Música de fondo -->
+    <audio id="musica" loop>
+        <source src="porque tu nombre es santo.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+    </audio>
+
+    <script>
+        document.addEventListener('click', function() {
+            let musica = document.getElementById("musica");
+            if (musica.paused) {
+                musica.play();
+            }
+        });
+    </script>
+
+    <header>
+        <img src="retrato.webp" alt="Retrato Personal" class="header-photo">
+        <h1>Mi Proyecto de Vida</h1>
+        <img src="logoencabe.png" alt="Logotipo" class="header-logo">
+    </header>
+
+    <section class="acronimo">
+        <h2>MI ACRÓNIMO</h2>
+        <p>Aquí tuve un poco de dificultad para poder elegir las palabras que me definieran como persona.</p>
+        <p>Pero gracias a Dios, lo logré</p>
+        <img src="acronimo.jpg" alt="Imagen del Acrónimo">
+    </section>
+
+    <section class="biografia">
+        <h2>MI BIOGRAFÍA (2007 - 2025)</h2>
+        <div class="timeline">
+            <div class="evento"><h3>2007 - MI NACIMIENTO</h3><p>El inicio de mi historia.</p></div>
+            <img src="nacimiento.jpg" alt="Imagen del Acrónimo">
+            <div class="evento"><h3>2014 - DESCUBRIENDO LAS ENSEÑANZAS</h3><p>Son los primeros años escolares. Aquí empiezo una etapa de mi vida muy importante</p></div>
+            <img src="estudios.jpg" alt="Imagen del Acrónimo">
+            <div class="evento"><h3>2020 - ADAPTÁNDOME AL CAMBIO</h3><p>El Año de los retos y mi crecimiento. El Año con más dificultades y más cambios.</p></div>
+            <img src="2020.jpeg" alt="Imagen del Acrónimo">
+            <div class="evento"><h3>2025 - CONSTRUYENDO EL FUTURO</h3><p>El inicio de proyectos y sueños. El fin de una etapa y el inicio de otra</p></div>
+            <img src="actualidad.jpeg" alt="actualidad">
+        </div>
+    </section>
+
+    <section class="areas">
+        <h2>MIS ÁREAS PRIORITARIAS</h2>
+        <div class="grid">
+            <a href="profesional.html" class="area">Profesional</a>
+            <a href="academico.html" class="area">Académica</a>
+            <a href="espiritual.html" class="area">Espiritual</a>
+            <a href="familiar.html" class="area">Familiar</a>
+            <a href="economico.html" class="area">Económica</a>
+            <a href="emocional.html" class="area">Emocional</a>
+            <a href="fisico.html" class="area">Física</a>
+            <a href="social.html" class="area">Social</a>
+        </div>
+    </section>
+
+    <section class="autorretrato">
+        <h2>AUTORRETRATO</h2>
+        <p>Una imagen lo más apegada a mí.</p>
+        <img src="retrato.webp" alt="Imagen de Autorretrato">
+    </section>
+
+    <section class="vision-mision">
+        <h2>MI VISIÓN Y MISIÓN</h2>
+        <div class="vision"><h3>Visión</h3><p>Mi visión de vida es ser un siervo de Dios ejemplar y ser un guía...</p></div>
+        <div class="mision"><h3>Misión</h3><p>Mi misión en la vida...</p></div>
+    </section>
+
+    <section class="aliados-valores">
+        <h2>ALIADOS Y VALORES</h2>
+        <div class="contenedor">
+            <div class="aliados"><h3>Aliados</h3><img src="aliados.jpg" alt="Imagen de Aliados"></div>
+            <div class="valores"><h3>Valores</h3><img src="valores.jpg" alt="Imagen de Valores"></div>
+        </div>
+    </section>
+
+    <section class="foda">
+        <h2>FODA</h2>
+        <img src="foda.jpg" alt="Imagen de FODA">
+    </section>
+
+    <a href="despedida.html" class="area">LA CONCLUSIÓN</a>
+
+    <footer>
+        <p>"Encomienda a Jehová tus obras, y tus pensamientos serán afirmados." - Proverbios 16:3</p>
+    </footer>
+
+</body>
+</html>

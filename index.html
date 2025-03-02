@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNA VENTANA DIFERENTE</title>
+    <link rel="stylesheet" href="estilodeentrada.css"> 
+</head>
+<body>    
+
+<!-- Contenedor del video de fondo -->
+<div class="video-container">
+    <video autoplay muted loop>
+        <source src="fondoinicio.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+</div>
+<div class="overlay"></div>  
+
+<!-- Encabezado principal -->
+<header>¡¡SEA USTED BIENVENIDO!!</header>
+
+<!-- Contenido principal -->
+<div class="container">
+    <div class="fecha">23 de febrero de 2025</div>
+
+    <!-- Logotipo -->
+    <img src="logotipo lcm.png" alt="Logotipo">
+
+    <!-- Titulares principales -->
+    <h1>¿QUÉ TAL?</h1>
+    <h2>SOY DAVIS ANTONIO GÁLVEZ MORALES</h2>
+    <h3>ASESOR DE LA MATERIA: PROF. RONAL SOTO</h3>
+
+    <!-- Descripción -->
+    <p>Soy un estudiante de <strong>5TO BACO sección "A".</strong></p>
+    <p>Esta es mi página web, la cual me ayudará a explicarles todo lo relacionado conmigo.</p>
+
+    <p class="texto-destacado">¿Quisieran conocer un poco de mi vida?</p>
+
+    <!-- Botones interactivos -->
+    <button onclick="mostrarMensaje('¡Genial! Sigamos adelante.', true)">Claro</button>
+    <button onclick="mostrarMensaje('No hay problema 😊', false)">En otro momento</button>
+
+    <p id="mensaje"></p>
+</div>
+
+<!-- Script para manejar la interacción de los botones -->
+<script>
+    function mostrarMensaje(texto, avanzar) {
+        document.getElementById("mensaje").innerText = texto;
+        if (avanzar) {
+            setTimeout(function() {
+                window.location.href = 'segundaparte.html';
+            }, 2000); // Redirige después de 2 segundos solo si eligió seguir adelante
+        }
+    }
+</script>
+
+<!-- Pie de página -->
+<footer>Davis Gálvez - ©2025</footer>
+
+</body>
+</html>

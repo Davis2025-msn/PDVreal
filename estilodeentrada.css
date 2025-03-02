@@ -1,0 +1,146 @@
+/* Importar fuente elegante */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Playfair+Display:wght@700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    overflow-x: hidden;
+}
+
+/* Video de fondo */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Capa de superposición para oscurecer un poco el video y resaltar el texto */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Encabezado y pie de página */
+header, footer {
+    background: rgba(17, 17, 17, 0.9);
+    padding: 20px;
+    border-top: 3px solid #b0b0b0;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    top: 0;
+    border-bottom: 3px solid #b0b0b0;
+    height: 65px;
+}
+
+footer {
+    bottom: 0;
+    height: 20px;
+}
+
+/* Espacio circular para la foto en el header */
+.header-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+/* Imagen de fondo adaptable al header */
+.header-background-img {
+    width: 160px;
+    height: auto;
+    opacity: 0.8;
+}
+
+/* Texto con efecto metálico impresionante */
+h1, h2 {
+    color: lightcoral;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #e0e0e0, #b0b0b0, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3), 
+                 0px 0px 15px rgba(192, 192, 192, 0.8);
+    animation: glowEffect 2s infinite alternate;
+}
+
+/* Animación de brillo */
+@keyframes glowEffect {
+    from {
+        text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3),
+                     0px 0px 15px rgba(192, 192, 192, 0.8);
+    }
+    to {
+        text-shadow: 6px 6px 20px rgba(255, 255, 255, 0.5), 
+                     0px 0px 25px rgba(192, 192, 192, 1);
+    }
+}
+
+/* Contenedor de contenido */
+.container {
+    max-width: 600px;
+    margin: 120px auto 80px auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Imágenes con detalles plateados */
+img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid rgba(192, 192, 192, 0.5);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+}
+
+/* Botones elegantes */
+button {
+    background: rgba(28, 28, 28, 0.8);
+    color: white;
+    border: 2px solid #b0b0b0;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
