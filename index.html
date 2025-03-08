@@ -17,6 +17,21 @@
 </div>
 <div class="overlay"></div>  
 
+ <!-- Música de fondo -->
+ <audio id="musica" autoplay loop>
+    <source src="Anciano de Días.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+</audio>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let musica = document.getElementById("musica");
+        musica.play().catch(() => {
+            document.addEventListener('click', () => musica.play(), { once: true });
+        });
+    });
+</script>
+
 <!-- Encabezado principal -->
 <header>¡¡SEA USTED BIENVENIDO!!</header>
 

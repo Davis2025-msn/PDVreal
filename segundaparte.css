@@ -66,10 +66,19 @@ img {
 }
 
 img.acronimo{
-    width: 70%;
+    width: 90%;
     max-width: 700px;
 }
 
+img.ALIADOS{
+    width: 90%;
+    max-width: 700px;
+}
+
+img.VALORES{
+    width: 90%;
+    max-width: 700px;
+}
 /* Botón atractivo */
 .btn {
     display: inline-block;
